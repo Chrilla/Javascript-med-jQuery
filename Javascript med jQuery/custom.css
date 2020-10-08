@@ -1,0 +1,53 @@
+#index-body {
+    background-image: url(images/blue-and-red-galaxy-artwork-1629236.jpg);
+    background-size: contain;
+    background-color: #333;
+}
+
+#login-body {
+    background-image: url(images/blue-and-red-galaxy-artwork-1629236.jpg);
+    background-size: cover;
+    background-color: #333;
+}
+
+#loggedin-body {
+    background-image: url(images/blue-and-red-galaxy-artwork-1629236.jpg);
+    background-size: cover;
+    background-color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 1rem;
+}
+
+#terms {
+    font-weight: 600;
+}
+
+#sign-in {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.vertical-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+.error {
+    color: red;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+button a {
+    color: #fff;
+}
+
+button a:hover {
+    color: #fff;
+    text-decoration: none;
+}

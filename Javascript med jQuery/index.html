@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Registrering</title>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="custom.css">
+</head>
+<body id="index-body">
+        
+    <form id="regForm" class="container mt-5 mb-5">
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">Förnamn *</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Skriv in ditt förnamn" autocomplete="off">
+                <div id="firstName_error" class="error"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Efternamn *</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Skriv in ditt efternamn" autocomplete="off">
+                <div id="lastName_error" class="error"></div>
+            </div>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline ">
+                <input type="radio" id="radio1" name="radiobutton" class="custom-control-input" autocomplete="off">
+                <label class="custom-control-label" for="radio1">Man *</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radio2" name="radiobutton" class="custom-control-input" autocomplete="off">
+                <label class="custom-control-label" for="radio2">Kvinna *</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="radio3" name="radiobutton" class="custom-control-input" autocomplete="off">
+                <label class="custom-control-label" for="radio3">Hen *</label>
+            </div>
+            <div id="radiobutton_error" class="error"></div>
+
+        <div class="form-group">
+            <label for="address" class="mt-2">Adress *</label>
+            <input type="text" class="form-control" id="address" placeholder="ex. Pilgatan 2" autocomplete="off">
+            <div id="address_error" class="error"></div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">Stad *</label>
+                <input type="text" class="form-control" id="city" placeholder="Stad" autocomplete="off">
+                <div id="city_error" class="error"></div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="Country">Land *</label>
+                <select id="country" class="form-control" autocomplete="off">
+                    <option value="">Välj land...</option>
+                    <option>Sverige</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="Zip">Postkod *</label>
+                <input type="text" class="form-control" id="zip" placeholder="ex. 12345" autocomplete="off">
+                <div id="zip_error" class="error"></div>
+            </div>
+        </div>
+
+        <div class="form-group">
+                <label for="phoneNumber">Mobilnummer *</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="ex. 070-1234567" autocomplete="off">
+                <div id="phoneNumber_error" class="error"></div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="email">Email adress *</label>
+                <input type="email" class="form-control" id="email" placeholder="ex. frontend@hotmail.com" autocomplete="off">
+                <div id="email_error" class="error"></div>
+            </div>
+
+            <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputPassword">Lösenord *</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Skriv in ditt lösenord" autocomplete="off">
+                <small id="ipwtext"></small>
+                <div id="password_error" class="error"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="confirmPassword">Bekräfta lösenord *</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Bekräfta ditt lösenord" autocomplete="off">
+                <span id="message"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="textarea">Meddelande <small>(valfritt)</small> </label>
+            <textarea class="form-control" id="textarea" rows="3" placeholder="Skriv in ditt meddelande..." autocomplete="off"></textarea>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="checkbox" autocomplete="off">
+                <label class="form-check-label" for="checkbox">
+                <b id="terms">Jag accepterar alla <a href="#">Användarvillkor</a> samt <a href="#">Integritetspolicyn</a> för registrering. *
+                <div id="checkbox_error" class="error"></div>
+                <span id="checkbox_message"></span>
+                </label>
+            </div>
+            
+        </div>
+        <form action="login.html" method="POST">
+            <button formaction="login.html" type="submit" class="btn btn-primary">Registrera</button>
+        </form>
+    </form>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

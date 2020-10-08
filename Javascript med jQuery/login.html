@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Logga in</title>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="custom.css">
+</head>
+<body id="login-body">
+
+    <div class="vertical-center">
+        <form id="loginform" class="container col-md-4">
+            <div id="sign-in" class="text-center mb-2">Tack för din registrering!<br>Du kan nu logga in.</div>
+            <div class="form-group">
+                <label for="login-email">Email adress</label>
+                <input type="email" class="form-control" id="loginemail" placeholder="Skriv in din email" autocomplete="off">
+                <div id="loginemail_error" class="error"></div>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Lösenord</label>
+                <small class="float-right mt-2"><a href="">Glömt lösenordet?</a></small>
+                <input type="password" class="form-control" id="loginpassword" placeholder="Skriv in ditt lösenord" autocomplete="off">
+                <div id="loginpassword_error" class="error"></div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary col-md-6 mt-2">Logga in</button>
+            </div>
+        </form>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
